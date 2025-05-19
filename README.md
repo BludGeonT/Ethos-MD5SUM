@@ -30,8 +30,8 @@ We do not want everyone in the channel to be able to issue these commands to the
 
 ### The Only Valid base ethos_md5sum_bot commands as of now:
 The ethos_md5sum_bot will only react and take actions on the base commands below if they are issued by a human being, WHICH IS AN ADMIN IN THE CHANNEL, as a reply to a picture spam Telegram message.  These require additional arguments or parameters but these are the base commands.  This specific ethos_md5sum_bot will ignore all other / (slash) commands unless they match in the list below.
-    - Command: `/md5add`
-    - Command: `/md5test`
+- Command: `/md5add`
+- Command: `/md5test`
 
 Any future related ethos_md5sum_bot command should be added to the authoritative list above.  This is to protect the bot from any malicious attempts to find a command that isn't locked down.
 
