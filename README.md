@@ -197,7 +197,7 @@ Here are a few examples of ways that Admins will reply to a picture to add a new
 ### Database Ideas
 - I Would like the database to contain several fields of numerical or alphanumeric contents but also a picture of the spam message needs to be saved directly from Telegram.
   - This might make things easier to store the downloaded media from Telegram when a user posts a picture to store the pictures and with their hash value in one area.
-  - Then another database, keyed off the hash value as the primary fiend followed by 7 other data fields shown below.
+  - Then another database, keyed off the hash value as the primary fiend followed by the other data fields shown below in the **Main Media Database** section.
 
 Looking for the most cost savings way of storing pictures and data into multiple databases, perhaps Google Sheets can do this effectively.  It needs to be figured out if two separate databases are better or if a single database can store the pictures (and eventually videos) as they are added into the Ethos md5sum system.
 
