@@ -81,24 +81,24 @@ There should be something like a Google Sheets configured to store the informati
 
 ## Ethos-MDSum Project Bot Management Database Layout
 After logging in, there needs to be a section that displays the current bots that are registered in the Ethos MD5Sum Utility that we are creating. New bots will be added by clicking an `Add Bot` button, which then will prompt for the bot's information (This should be presented as a section on the screen of the Ethos-MD5sum project UI after authenticating and being logged in:
-- **DB Field Name:** ethos_md5sum_bot_id
+- **DB Field Name:** `ethos_md5sum_bot_id`
   - **Description:** ID number of the bot account
-- **DB Field Name:** ethos_md5sum_bot_name
+- **DB Field Name:** `ethos_md5sum_bot_name`
   - **Description:** A name for the bot.  This can be the {username} of the bot or can be provided by the authenticated user adding the bot.  
-- **DB Field Name:** ethos_md5sum_bot_channels
+- **DB Field Name:** `ethos_md5sum_bot_channels`
   - **Description:** The ID of the Channel or Channels that this bot will be idling in, listening in, and monitoring in
-- **DB Field Name:** ethos_md5sum_bot_API_token
+- **DB Field Name:** `ethos_md5sum_bot_API_token`
   - **Description:** The ethos_md5sum_bot's Telegram API Token value
-- **DB Field Name:** ethos_md5sum_bot_runlevel
+- **DB Field Name:** `ethos_md5sum_bot_runlevel`
   - **Description:** The bot's Run Level (This should be set to 1 by default and should be auto filled in for the authenticated user adding a bot and not editable)
-- **DB Field Name:** ethos_md5sum_bot_logchan
+- **DB Field Name:** `ethos_md5sum_bot_logchan`
   - **Description:** The Channel ID of the log channel `LOGCHANNEL` so that confirmations can be sent for important bot actions and state changes
     - The logging channel is not critical to operation and the bot should be able to function if there is no logging channel specified
-- **DB Field Name:** ethos_md5sum_bot_state
-  - **Description:** ACTIVE or NOTACTIVE
+- **DB Field Name:** `ethos_md5sum_bot_state`
+  - **Description:** `ACTIVE` or `NOTACTIVE`
     - When creating a new bot and adding in the information from the UI, the value of the ACTIVE or NOTACTIVE should be set to NOTACTIVE.  This will prevent a bot from running out of control due to data entry errors.  There should be a method to change the bot's state to ACTIVE or NOTACTIVE using a button on the UI.
-      - An **ACTIVE** bot means that the bot is able to accept a RUN LEVEL and will function based on the RUN LEVEL
-      - a **NOTACTIVE** This is the DEFAULT state for adding a new bot in with the UI as a safety precaution.  If a bot is set to be NOTACTIVE then it will do nothing and be paused until a user sets it back to ACTIVE again.
+      - A **ACTIVE** bot means that the bot is able to accept a RUN LEVEL and will function based on the RUN LEVEL
+      - A **NOTACTIVE** This is the DEFAULT state for adding a new bot in with the UI as a safety precaution.  If a bot is set to be NOTACTIVE then it will do nothing and be paused until a user sets it back to ACTIVE again.
 
 From there, there should be a way to select a specific bot, and press a button that says `ACTIVATE` which then tells the bot to begin to listen to the channel it has been assigned to.  A verification needs to be made that the bot is listening and can interact in the channel so when someone presses the `ACTIVATE` button, the bot needs to print out a message saying "Ethos md5sum monitoring enabled successfully.." after functionality validation has taken place.
 - Reference the `UI.md` file for visualizations and mockup ideas.
