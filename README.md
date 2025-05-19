@@ -194,4 +194,3 @@ Looking for the most cost effective way of storing pictures and data, perhaps Go
 - **seen_in_channels** - As multiple bots start to monitor and observe multiple channels, we want to also keep track of the channels where this picture has been observed and this can be one to many channels and the channel ID should be recorded and stored.  This will help provide valuable data for other Ethos modules in the Telegram section.
    
 ## ethos-md5sum-bot Monitoring Functionality
-A ethos-md5sum-bot can be added to a channel and given Administrator rights.  The API Token will then be plugged into the UI interface 
