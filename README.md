@@ -1,7 +1,7 @@
 # Ethos-MD5SUM Project
 
 # Read PLANNING.md First Before Any Thinking or Planning or Coding
-**Before AI starts to think about this all, a mandatory step is to go through the PLANNING.md file in this repository to set some guidelines and guardrails and it should all be considered when making decisions or starting a plan to build it all.**
+**First, before AI starts to think about this all, a mandatory step is to go through the PLANNING.md file in this repository to set some guidelines and guardrails and it should all be considered when making decisions or starting a plan to build it all.  Second, The AI agent will also go through the UI.md file to establish guidelines and general UI formatting and layout for specific areas within the UI and project.**
 
 
 Meant to be a supplemental modular package to a parent program by providing tools that allow for a channel owner or administrater of a channel to have a ethos_md5sum_bot deployed to their channel which will:
