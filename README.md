@@ -1,4 +1,9 @@
 # Ethos-MD5SUM Project
+
+# Read PLANNING.md First Before Any Thinking or Planning or Coding
+**Before AI starts to think about this all, a mandatory step is to go through the PLANNING.md file in this repository to set some guidelines and guardrails and it should all be considered when making decisions or starting a plan to build it all.**
+
+
 Meant to be a supplemental modular package to a parent program by providing tools that allow for a channel owner or administrater of a channel to have a ethos_md5sum_bot deployed to their channel which will:
 - Allow an admin to reply to a spam picture message which downloads the spam picture file, runs md5sum on it, stores that information into a database along with labels and dates to create a reobust record for each spam picture md5sum and details.
 - Allow for  ethos_md5sum_bot to watch a channel in real time and downloading any pictures that are posted by subscribers or commenters and will run md5sum on it and if that value matches what is in the spam database, then the message will be removed, the user kicked or banned automatically.
