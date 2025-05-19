@@ -1,5 +1,7 @@
-# Ethos-MD5SUM
-A unique way of performing an MD5SUM on files posted in a Telegram chat, specifically pictures and storing them into a database so that other channels with ethos-md5sum-bots running can take advantage of realtime addtions of spam hashes or hashes from other picture related content.
+# Ethos-MD5SUM Project
+Meant to be a supplemental modular package to a parent program by providing tools that allow for a channel owner or administrater of a channel to have a ethos_md5sum_bot deployed to their channel which will:
+- Allow an admin to reply to a spam picture message which downloads the spam picture file, runs md5sum on it, stores that information into a database along with labels and dates to create a reobust record for each spam picture md5sum and details.
+- Allow for  ethos_md5sum_bot to watch a channel in real time and downloading any pictures that are posted by subscribers or commenters and will run md5sum on it and if that value matches what is in the spam database, then the message will be removed, the user kicked or banned automatically.
 
 # Ethos MD5SUM project Meanings
 - In this article, when I refer to ethos-md5sum-bot, I am referring to a Telegram bot that has been added into the Ethos MD5SUM Project by a user with permissions to be used by this project.
