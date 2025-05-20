@@ -206,15 +206,15 @@ Looking for the most cost savings way of storing pictures and data into multiple
 ### Main Media Database
 
 #### Each database record should be stamdardized and should contain fields for the following pieces of information (name the DB fields in the DB to be the following):
-- **md5sum_hash** - the md5sum result using the same source and method to generate md5sum hashes
-- **description** - A description of the photo and how it's being used, where
-- **labels** - One or many labels will be stored in the record
-- **action** - What action will be taken when the bot observes someone posting a picture that has a md5sum hash value that matches one in the database - kick, ban, or nothing
-- **md5date** - The time and Date of hash record creation, dynamically added when a /md5add is issued or when a record is manually created
-- **last_date_seen** - The last time and date of the has record being matched
-- **total_times_seen** - The cumulative total of times the bot has observed this record
-- **seen_in_channels** - As multiple bots start to monitor and observe multiple channels, we want to also keep track of the channels where this picture has been observed and this can be one to many channels and the channel ID should be recorded and stored.  This will help provide valuable data for other Ethos modules in the Telegram section.
-- **privacy_filter** - This is a boolean value in the database.  If a picture or piece of media in the database is flagged as 1, or "enabled", then that picture or piece of media will be blurred out on the thumbnails that are generated and in order to view this picture without the Privacy Filter blurring, a button must be clicked to "Acknowledge" the risks of viewing this file and should be logged in the audit log of who the Project user was along with time and date.
+- **`md5sum_hash`** - the md5sum result using the same source and method to generate md5sum hashes
+- **`description`** - A description of the photo and how it's being used, where
+- **`labels`** - One or many labels will be stored in the record
+- **`action`** - What action will be taken when the bot observes someone posting a picture that has a md5sum hash value that matches one in the database - kick, ban, or nothing
+- **`md5date`** - The time and Date of hash record creation, dynamically added when a /md5add is issued or when a record is manually created
+- **`last_date_seen`** - The last time and date of the has record being matched
+- **`total_times_seen`** - The cumulative total of times the bot has observed this record
+- **`seen_in_channels`** - As multiple bots start to monitor and observe multiple channels, we want to also keep track of the channels where this picture has been observed and this can be one to many channels and the channel ID should be recorded and stored.  This will help provide valuable data for other Ethos modules in the Telegram section.
+- **`privacy_filter`** - This is a boolean value in the database.  If a picture or piece of media in the database is flagged as 1, or "enabled", then that picture or piece of media will be blurred out on the thumbnails that are generated and in order to view this picture without the Privacy Filter blurring, a button must be clicked to "Acknowledge" the risks of viewing this file and should be logged in the audit log of who the Project user was along with time and date.
 - If this value is 0, or "disabled", then there are no restrictions on viewing the contents of the file or media item.
 - The Project, when displaying thumbnails when browsing the Media Database, should obey this privacy_filter rule.
    
