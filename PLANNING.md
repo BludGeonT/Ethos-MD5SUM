@@ -1,6 +1,8 @@
 ### Ethos-MD5SUM Project Awareness and Context
 - **Always read `README.md`** at the start of a new conversation to understand the project's architecture, goals, style, and constraints.
-- **Check `TASK.md`** before starting a new task.  If the task isn't listed, add it with a brief description and today's date.
+- **Always read `UI.md`** at the start of a new conversation to understand the components and information related to the Project UI.
+- **Check `TASK.md`** before starting a new task.  If the task isn't listed, add it with a brief description and today's date.  
+- **Check for any additional Markdown files and if they exist read these after the `README.md`, and `UI.md` files for more understanding.**
 - **Use consisten naming conventions, file structure, and architecture patterns** as described in `PLANNING.md`.
 
 ### Code Structure & Modularity
