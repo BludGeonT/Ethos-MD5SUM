@@ -26,12 +26,12 @@
 - **Follow PEP8**, use type hints, and format with `black`.
 - **Use `pydantic` for data validation**.
 
-### 📚 Documentation & Explainability
+### Documentation & Explainability
 - **Update `README.md`** when new features are added, dependencies change, or setup steps are modified.
 - **Comment non-obvious code** and ensure everything is understandable to a mid-level developer.
 - When writing complex logic, **add an inline `# Reason:` comment** explaining the why, not just the what.
 
-### 🧠 AI Behavior Rules
+### AI Behavior Rules
 - **Never assume missing context. Ask questions if uncertain.**
 - **Never hallucinate libraries or functions** – only use known, verified Python packages.
 - **Always confirm file paths and module names** exist before referencing them in code or tests.
